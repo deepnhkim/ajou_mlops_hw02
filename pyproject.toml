@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "asttokens>=3.0.1",
+    "dvc>=3.67.0",
+    "executing>=2.2.1",
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.3",
+    "pandas>=3.0.1",
+    "pure-eval>=0.2.3",
+    "stack-data>=0.6.3",
+]

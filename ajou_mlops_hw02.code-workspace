@@ -1,8 +1,20 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        // 1. VS Code가 이 폴더를 열 때 사용할 기본 파이썬 경로 고정
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+        
+        // 2. 터미널이 열릴 때 자동으로 가상환경을 활성화하도록 설정
+        "python.terminal.activateEnvInCurrentTerminal": true,
+
+        // 3. 터미널 종류(PowerShell/Bash)에 상관없이 환경 변수 충돌 방지
+        "terminal.integrated.env.windows": {
+            "PYTHONPATH": "${workspaceFolder}",
+            "VIRTUAL_ENV": "${workspaceFolder}/.venv"
+        }
+    }
 }
